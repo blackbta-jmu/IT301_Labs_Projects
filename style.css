@@ -1,48 +1,40 @@
 *{
     padding:10px;
     margin:0;
+    background-color: black;
+    color: white;
 }
-
-
-section{  
-  margin: 20px 0;
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Trade+Winds&display=swap');
+h1, h2 {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color:darkgreen;
+    text-decoration: underline darkred wavy;
 }
-
+section, article {
+    font-family: "Trade Winds", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    color: green;
+    border: 1px solid purple;
+    border-radius: 10px;
+    font-size: 16px;
+}
+section h3, article h3 {
+    color: darkred;
+}
+body, ul li, li, p, main{
+    font-family: "Metal Mania", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    color:green
+}
+main {
+    text-align: center;
+}
 ul{    
   padding-left: 40px;
-}
-
-ul ul ul {
-  margin-top: 10px;
-}
-
-li:nth-child(1){
-    color: royalblue;
-}
-li:nth-child(2){
-    color: forestgreen;
-}
-li:nth-child(3){
-    color: crimson;
-}
-ul ul > li:nth-of-type(1){
-    color: darkviolet;
-    border: 5px solid whitesmoke;
-    background-color: whitesmoke;
-    border-radius: 50px;
-}
-ul ul ul > li:nth-of-type(1){
-    color: darkorange;
-    border: 5px filled beige;
-    background-color: beige;
-    border-radius: 50px;
-}
-ul ul > li:nth-of-type(2){
-    color: darkviolet;
-    border: 5px solid whitesmoke;
-    background-color: whitesmoke;
-    border-radius: 50px;
-}
-li:last-of-type{
-    color: royalblue;
+  border: 5px solid darkred;
+  box-shadow: 20px 20px 20px 20px darkred;
 }
