@@ -1,0 +1,115 @@
+
+* {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #F4AE52;
+    color: #2A1A0E;
+}
+
+/* Headings */
+h1 {
+    font: bold 36px 'Times New Roman', Times, serif;
+    color: #2A1A0E;
+    border-bottom: 3px solid #D4621A;
+}
+
+h2 {
+    font: bold 28px 'Times New Roman', Times, serif;
+    color: #D4621A;
+}
+
+h3 {
+    font: bold 24px 'Times New Roman', Times, serif;
+    color: #2A1A0E;
+}
+
+/* Main content */
+main {
+    padding: 100px 30px 30px;
+    min-height: 100vh;
+    background: #FEF3E2;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #F4AE52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgb(42, 26, 14);
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.nav-links a {
+    display: block;
+    font-size: 18px;
+    padding: 10px 12px;
+    color: #2A1A0E;
+}
+
+/* Navbar hover effect */
+.nav-links a:hover {
+    background: #D4621A;
+    color: #FEF3E2;
+    border-radius: 5px;
+}
+
+/* Links in page content */
+main a {
+    color: #D4621A;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #2A1A0E;
+}
+
+/* Reduce spacing on smaller screens */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+        padding: 10px 6px;
+    }
+}
+/* Images (Mainly for home page picture) */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

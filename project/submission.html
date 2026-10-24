@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Review</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Movie Fanatics</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviewing.html">Reviewing Guide</a></li>
+            <li><a href="newMovies.html">New Movies</a></li>
+            <li><a href="rotd.html">Review Of The Day</a></li>
+            <li><a href="submission.html">Submissions</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Submit Your Review</h1>
+        <p>We welcome movie enthusiasts to submit their reviews for a chance to be featured on our website! 
+            Please fill out the form below with your review details. Make sure to provide an honest and thoughtful review, 
+            as we value the opinions of our community members. Once submitted, our team will review your submission and 
+            select reviews to be featured in our "Review Of The Day" section. Thank you for sharing your passion for movies with us!
+        </p>
+        <form>
+            <label for="movieTitle">Movie Title:</label><br>
+            <input type="text" id="movieTitle" name="movieTitle" required><br><br>
+
+            <label for="reviewerName">Your Name:</label><br>
+            <input type="text" id="reviewerName" name="reviewerName" required><br><br>
+
+            <label for="rating">Rating (1-5):</label><br>
+            <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+            <label for="reviewText">Your Review:</label><br>
+            <textarea id="reviewText" name="reviewText" rows="5" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+</body>
+</html>
