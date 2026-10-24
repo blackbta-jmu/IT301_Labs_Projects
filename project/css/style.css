@@ -15,12 +15,12 @@ body {
 h1 {
     font: bold 36px 'Times New Roman', Times, serif;
     color: #2A1A0E;
-    border-bottom: 3px solid #D4621A;
+    border-bottom: 3px solid #7F3A10;
 }
 
 h2 {
     font: bold 28px 'Times New Roman', Times, serif;
-    color: #D4621A;
+    color: #7F3A10;
 }
 
 h3 {
@@ -76,14 +76,14 @@ main {
 
 /* Navbar hover effect */
 .nav-links a:hover {
-    background: #D4621A;
+    background: #7F3A10;
     color: #FEF3E2;
     border-radius: 5px;
 }
 
 /* Links in page content */
 main a {
-    color: #D4621A;
+    color: #7F3A10;
     font-weight: bold;
 }
 
