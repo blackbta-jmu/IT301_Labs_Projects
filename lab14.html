@@ -9,7 +9,9 @@
     <script>
         const site = 'https://randomuser.me/api/';
         let img = document.createElement('img');
-        let name = document.createElement('txt')
+        let name = document.createElement('div')
+        let email = document.createElement('div')
+        let phone = document.createElement('div')
         let bttn = document.createElement('button');
         bttn.type = 'button';
         bttn.textContent = 'Generate Profile'
@@ -17,21 +19,28 @@
         form.action = '#';
         form.appendChild(bttn);
         document.body.appendChild(form);
+        document.body.appendChild(name);
+        document.body.appendChild(email);
+        document.body.appendChild(phone);
         const getProfile = async()=>{
             try {
-                let result = await fetch('https://randomuser.me/api/')
-                result = await result.json()
+                let response = await fetch('https://randomuser.me/api/')
                 if (!response.ok)
                 {
-                    throw new Error(`Response status:
-                    ${response.status}`);}
-                img.src = result.results[0].picture['medium']
-                console.log(result.results[0].picture['medium'])
-                img.alt ='Random profile picture'
-                img.style.width='300px'
+                    throw new Error(`Response status: ${response.status}`);
+                }
+                let result = await response.json();
+                const person = result.results[0];
+                img.src = person.picture.medium;
+                console.log(person.picture.large);
+                img.alt ='Random profile picture';
                 document.body.appendChild(img);
-                name.textContent = result[0].name
-            }catch{(reason)=>console.log(reason)}
+                name.textContent = `Name: ${person.name.first} ${person.name.last}`;
+                email.textContent = `Email: ${person.email}`;
+                phone.textContent = `Phone: ${person.phone}`;
+            } catch (reason) {
+                console.log(reason);
+            }
         }
         bttn.addEventListener('click', getProfile)
         getProfile();
